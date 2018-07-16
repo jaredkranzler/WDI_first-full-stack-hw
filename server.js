@@ -6,15 +6,11 @@ const methodOverride = require('method-override');
 require('./db/db')
 
 app.use(express.static('public'));
-
-
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 
 
-const charactersController = require('./controllers/charactersController')
-
-
+const charactersController = require("./controllers/charactersController");
 app.use('/characters', charactersController)
 
 

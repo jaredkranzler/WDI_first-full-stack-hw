@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show</title>
+</head>
+<body>
+  <h1>Character Show Page</h1>
+
+  <h3>Character Name: <%= character.name %></h3>
+ 
+  <h4>Patronus: <%= character.patronus %></h4>
+
+  <h4>Blod Status: <%= character.bloodStaus %></h4>
+
+  <% if(character.human === true) { %>
+    <span>Mudblood</span>
+  <% } else { %>
+    <span>Pureblood</span>
+  <% } %>
+
+  <h5><a href="http://localhost:3000/characters/"> back to Character Index</a></h5>
+
+
+</body>
+</html>
